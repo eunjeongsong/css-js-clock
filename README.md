@@ -1,23 +1,22 @@
-# javascript 를 이용한 drum 만들기
-- vanilla script 를 이용한 drum 만들기
-- keyDown 이벤트(키보드 입력)의 keyCode에 따라 소리를 발생.
+# CSS 를 이용한 시계 만들기
 
-
-## HTML
-
-### audio 태그
-- 음악 삽입가능
-
+- vanilla script + CSS
+- transform, transition 속성 사용.
 
 ## CSS
 
-### flex 속성
-- 축 이동의 개념 (x, y)
-- row, column 에 따라 축 계산법이 바뀌는 점 유의.
-```css
-flex-direction: row;
-```
-- 인라인 블럭으로 사용하기 위한 속성 필요.
-```css
-- display: inline-flex;
-```
+### transform-origin: 100%;
+
+- 대상 시계 바늘의의 전체 길이를 이동 대상으로 설정.
+
+### transform: rotate(90deg);
+
+- 바늘의 위치가 90도(정각) 부터 시작하도록 설정.
+
+### transition: all 0.05s;
+
+- 위의 속성들이 0.05초의 시간동안 적용되도록 설정.
+
+### transition-timing-function: cubic-bezier...
+
+- 네개의 꼭지점을 이용한 이동 방법..? 에 대한 느낌...인것만 알겠음... 스터디 필요.
